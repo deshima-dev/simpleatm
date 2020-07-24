@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "alma-atm"
+version = "0.0.1"
+license = "MIT"
+description = "Lightweight Python package for calculating the atmospheric transmission at the ALMA site"
+authors = ["Akio Taniguchi <taniguchi@a.phys.nagoya-u.ac.jp>"]
+homepage = "https://github.com/deshima-dev/alma-atm"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+xarray = "^0.15"
+
+[tool.poetry.dev-dependencies]
+black = "^19.10b0"
+flake8 = "^3.8"
+pytest = "^5.4"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
