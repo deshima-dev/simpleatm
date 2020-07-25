@@ -33,7 +33,7 @@ $ etc/configure
 
 ## References
 
-- [ATM model] (pre-calculated table was obtained here)
+- [ATM model]: pre-calculated table was obtained here
 - [xarray]: N-D labeled arrays and datasets in Python
 
 [alma-atm]: https://pypi.org/project/alma-atm/
