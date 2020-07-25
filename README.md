@@ -3,7 +3,7 @@ Lightweight Python package for calculating the atmospheric transmission at the A
 
 ## Overview
 
-[alma-atm] is a Python package which calculates the (sub)millimeter atmospheric transmission at the [ALMA] site as a function of precipitable water vapor (PWV) and frequency.
+[alma-atm] is a Python package which calculates (sub)millimeter atmospheric transmission at the [ALMA] site as a function of precipitable water vapor (PWV) and frequency.
 The package includes a pre-calculated transmission table by the [ATM model] (Pardo et al. 2001).
 Moreover, since the table is loaded as the [xarray]'s DataArray format, interpolation, plotting, and saving features are provided by default.
 Therefore, [alma-atm] would be useful in fast and approximate sensitivity calculation of a telescope instrument.
