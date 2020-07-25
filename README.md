@@ -21,7 +21,7 @@ $ pip install alma-atm
 
 ## Usage
 
-To be updated after the release of v0.1.0.
+To be updated after the release of [v0.1.0](https://github.com/deshima-dev/alma-atm/milestone/2).
 
 ## For developers
 
