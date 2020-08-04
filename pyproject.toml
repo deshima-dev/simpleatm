@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "alma-atm"
+name = "simpleatm"
 version = "0.0.1"
 license = "MIT"
-description = "Lightweight Python package for calculating the atmospheric transmission at the ALMA site"
+description = "Lightweight Python package for calculating the atmospheric transmission"
 authors = ["Akio Taniguchi <taniguchi@a.phys.nagoya-u.ac.jp>"]
-homepage = "https://github.com/deshima-dev/alma-atm"
+homepage = "https://github.com/deshima-dev/simpleatm"
 readme = "README.md"
 
 [tool.poetry.dependencies]
