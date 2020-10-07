@@ -1,4 +1,10 @@
 # simpleatm
+
+[![PyPI](https://img.shields.io/pypi/v/simpleatm.svg?label=PyPI&style=flat-square)](https://pypi.org/pypi/simpleatm/)
+[![Python](https://img.shields.io/pypi/pyversions/simpleatm.svg?label=Python&color=yellow&style=flat-square)](https://pypi.org/pypi/simpleatm/)
+[![Test](https://img.shields.io/github/workflow/status/deshima-dev/simpleatm/Test?logo=github&label=Test&style=flat-square)](https://github.com/deshima-dev/simpleatm/actions)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?label=License&style=flat-square)](LICENSE)
+
 Lightweight Python package for calculating the atmospheric transmission
 
 ## Overview
@@ -21,14 +27,14 @@ $ pip install simpleatm
 
 ## Usage
 
-To be updated after the release of [v0.1.0](https://github.com/deshima-dev/simpleatm/milestone/2).
+To be updated after the release of [v0.2.0](https://github.com/deshima-dev/simpleatm/milestone/2).
 
 ## For developers
 
 ```shell
 $ git clone https://github.com/deshima-dev/simpleatm.git
 $ cd simpleatm
-$ etc/configure
+$ scripts/setup
 ```
 
 ## References
