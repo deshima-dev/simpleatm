@@ -1,9 +1,14 @@
 [tool.poetry]
 name = "simpleatm"
-version = "0.0.1"
+version = "0.1.0"
 license = "MIT"
 description = "Lightweight Python package for calculating the atmospheric transmission"
 authors = ["Akio Taniguchi <taniguchi@a.phys.nagoya-u.ac.jp>"]
+maintainers = [
+    "Yohei Togami <y.togami@a.phys.nagoya-u.ac.jp>",
+    "Keiichi Matsuda <matsuda@a.phys.nagoya-u.ac.jp>",
+    "Masato Hagimoto <hagimoto@a.phys.nagoya-u.ac.jp>",
+]
 homepage = "https://github.com/deshima-dev/simpleatm"
 readme = "README.md"
 
