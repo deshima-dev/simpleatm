@@ -9,12 +9,13 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.6"
-pandas = ">= 0.25"
 xarray = "^0.15"
 
 [tool.poetry.dev-dependencies]
-black = "^19.10b0"
+black = "^20.8b"
 flake8 = "^3.8"
+ipython = "^7.16"
+ipykernel = "^5.3"
 pytest = "^6.0"
 
 [build-system]
