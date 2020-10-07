@@ -10,6 +10,7 @@ on:
 
 jobs:
   job:
+    name: Test
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -17,10 +18,16 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Setup Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
         run: |
           pip install poetry
           poetry install
+      - name: Lint by Flake8
+        run: poetry run flake8 tests simpleatm
+      - name: Format by Black
+        run: poetry run black --check tests simpleatm
+      - name: Test by pytest
+        run : poetry run pytest -v tests
