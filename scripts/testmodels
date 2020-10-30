@@ -12,17 +12,16 @@ import xarray as xr
 
 # constants
 DATA_PATH = Path() / "simpleatm" / "data"
-FREQ = [200, 250, 300, 350, 400]  # GHz
+FREQ = [200.0, 250.0, 300.0, 350.0, 400.0]  # GHz
 PWV = [1.0, 2.0, 3.0, 4.0]  # mm
-T_ATM = [263, 273, 283]  # K
-Z = [0, 45]  # deg
+T_ATM = [263.0, 273.0, 283.0]  # K
 
 
 # make valid model
 name = "_test_pass.nc"
-dims = "freq", "PWV", "T_atm", "Z"
-shape = tuple(map(len, (FREQ, PWV, T_ATM, Z)))
-coords = dict(zip(dims, (FREQ, PWV, T_ATM, Z)))
+dims = "freq", "PWV", "T_atm"
+shape = tuple(map(len, (FREQ, PWV, T_ATM)))
+coords = dict(zip(dims, (FREQ, PWV, T_ATM)))
 
 np.random.seed(0)
 data = np.random.randn(*shape)
@@ -32,9 +31,9 @@ xr.DataArray(data, coords, dims).to_netcdf(DATA_PATH / name)
 
 # make invalid model
 name = "_test_fail.nc"
-dims = "freq_", "PWV_", "T_atm_", "Z_"
-shape = tuple(map(len, (FREQ, PWV, T_ATM, Z)))
-coords = dict(zip(dims, (FREQ, PWV, T_ATM, Z)))
+dims = "freq_", "PWV_", "T_atm_"
+shape = tuple(map(len, (FREQ, PWV, T_ATM)))
+coords = dict(zip(dims, (FREQ, PWV, T_ATM)))
 
 np.random.seed(1)
 data = np.random.randn(*shape)
